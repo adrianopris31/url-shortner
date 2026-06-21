@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ShortUrl extends Model
+{
+    protected $table = 'links';
+    protected $fillable = ['original_url', 'code'];
+}
