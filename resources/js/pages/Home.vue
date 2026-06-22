@@ -59,7 +59,7 @@ async function shortenUrl() {
 
 async function copyLink(link: ShortenedLink) {
     try {
-        await navigator.clipboard.writeText(`https://shorta.io/${link.short}`);
+        await navigator.clipboard.writeText(`https://url-shortner-production-e31c.up.railway.app/${link.short}`);
 
         copiedId.value = link.id;
 
@@ -70,7 +70,7 @@ async function copyLink(link: ShortenedLink) {
         }, 1800);
     } catch (e: any) {
         console.error(e.message);
-        error.value = `Couldn't copy the link! Copy: https://shorta.io/${link.short}`;
+        error.value = `Couldn't copy the link! Copy: https://url-shortner-production-e31c.up.railway.app/${link.short}`;
     }
 }
 
