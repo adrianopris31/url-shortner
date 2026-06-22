@@ -70,7 +70,7 @@ async function copyLink(link: ShortenedLink) {
         }, 1800);
     } catch (e: any) {
         console.error(e.message);
-        error.value = `Couldn't copy the link! Manually copy: https://shorta.io/${link.short}`;
+        error.value = `Couldn't copy the link! Copy: https://shorta.io/${link.short}`;
     }
 }
 
